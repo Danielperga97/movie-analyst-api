@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'newgrp docker'
                 sh 'npm install'
             }
         }
